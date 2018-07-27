@@ -6,13 +6,9 @@
 * An SSH key pair that will be used to login to instances
 * An existing VNET in which to deploy the elephant
 
-You will also need an Azure Service Principal to manage the related Azure resources.  This comes in the form of a servicePrincipalAppId and a servicePrincipalAppKey.  If you do not have one, or wish for one to be created for you, click below and paste in:
+You will also need an Azure Service Principal to manage the related Azure resources.  This comes in the form of a servicePrincipalAppId and a servicePrincipalAppKey.  If you do not have one, or wish for one to be created for you, click <a href="https://shell.azure.com/bash" target="_blank"><img src="https://shell.azure.com/images/launchcloudshell.png"/></a> and paste in: `az ad sp create-for-rbac`
 
-<a href="https://shell.azure.com/bash" target="_blank"><img src="https://shell.azure.com/images/launchcloudshell.png"/></a>
-
-az ad sp create-for-rbac
-
-The servicePrincipalAppId is the value of UserId and the servicePrincipalAppKey is the value of "Password".
+The servicePrincipalAppId is the value of "appId" and the servicePrincipalAppKey is the value of "password".
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgreigbannister%2Felephant%2Fmaster%2Fazure%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
